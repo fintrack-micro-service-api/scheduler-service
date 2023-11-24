@@ -10,14 +10,6 @@
         <module name="scheduler-service.main" />
       </profile>
     </annotationProcessing>
-<<<<<<< HEAD
     <bytecodeTargetLevel target="17" />
-=======
-<<<<<<< HEAD
-    <bytecodeTargetLevel target="17" />
-=======
-    <bytecodeTargetLevel target="19" />
->>>>>>> 80c8b3e090a288980ce91b7a6eaa559143ad1556
->>>>>>> 14ed61651c8e687c65fc2a5f967032034b9b6ca1
   </component>
 </project>
