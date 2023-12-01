@@ -5,59 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="820e264d-a944-427d-ae17-e8c69ce425d3" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/cache.properties" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/cache.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/file-system.probe" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/file-system.probe" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/example/SchedulerApplication.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/example/config/KeycloakClientConfig.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/example/config/SecurityConfig.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/example/config/WebClientConfig.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/example/controller/ScheduleController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/example/dao/MailScheduleDao.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/example/dao/impl/MailScheduleDaoImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/example/dao/repository/MailScheduleRepository.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/example/exception/BadRequestException.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/example/exception/DownStreamServerException.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/example/exception/ExceptionControllerAdvice.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/example/exception/InternalServerException.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/example/exception/MailScheduleException.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/example/exception/NotFoundException.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/example/jobs/MailScheduleJob.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/example/mapper/ScheduleMapper.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/example/models/dto/MailScheduleDto.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/example/models/dto/MessageDto.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/example/models/dto/ScheduleDto.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/example/models/dto/TelegramCreatedBotDto.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/example/models/dto/TransactionHistoryDto.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/example/models/dto/UserDto.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/example/models/dto/UserDtoClient.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/example/models/entity/MailSchedule.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/example/models/entity/User.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/example/models/request/MessageRequest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/example/models/request/Request.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/example/models/response/ApiResponse.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/example/models/response/LoginResponse.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/example/models/type/NotificationType.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/example/models/type/StatementType.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/example/models/type/TransactionStatus.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/example/models/type/TransactionType.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/example/service/MailScheduleService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/example/service/MailService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/example/service/TelegramService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/example/service/impl/MailScheduleServiceImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/example/service/impl/MailServiceImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/example/service/impl/TelegramServiceImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/example/utils/AppUtils.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/example/utils/Constants$MailScheduleJob.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/example/utils/Constants$QuartzScheduler.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/example/utils/Constants.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/application-default.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/application-local-postgres.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/application-local.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/application.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/script/schedule-db.sql" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/tmp/compileJava/previous-compilation-data.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -87,9 +36,9 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 1
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 1
+}</component>
   <component name="ProjectId" id="2Ybi95JkrQQuu5sHbjQ0nArOBdj" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -150,6 +99,7 @@
       <option name="presentableId" value="Default" />
       <updated>1700800525078</updated>
       <workItem from="1700800526140" duration="50000" />
+      <workItem from="1701397702179" duration="11000" />
     </task>
     <servers />
   </component>
