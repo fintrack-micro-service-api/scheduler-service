@@ -14,8 +14,8 @@ logging:
             springframework:
                 web: DEBUG
 server:
-    servlet:
-        context-path: /fintrack-scheduler-service
+#    servlet:
+#        context-path: /fintrack-scheduler-service
     port: 8086
 spring:
     application:
