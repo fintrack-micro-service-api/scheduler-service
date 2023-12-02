@@ -19,6 +19,7 @@ import java.util.UUID;
 @RestController
 @RequestMapping("api/v1/schedules")
 @SecurityRequirement(name = "auth")
+@CrossOrigin
 public class ScheduleController {
 
     @Autowired
