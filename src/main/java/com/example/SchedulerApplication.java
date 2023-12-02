@@ -18,14 +18,15 @@ import java.time.ZonedDateTime;
 import java.util.UUID;
 
 @SpringBootApplication
-@OpenAPIDefinition(
-        servers = @Server(url = "/", description = "Default Server URL"),
-        info = @Info(
-                title = "schedule service",
-                description = "Spring Boot API",
-                version = "2.0.1"
-        )
-)
+// I close this because it's override the serverlet on route. by Kimheang Ken
+//@OpenAPIDefinition(
+//        servers = @Server(url = "/", description = "Default Server URL"),
+//        info = @Info(
+//                title = "schedule service",
+//                description = "Spring Boot API",
+//                version = "2.0.1"
+//        )
+//)
 @SecurityScheme(
         name = "auth",
         type = SecuritySchemeType.OAUTH2,
