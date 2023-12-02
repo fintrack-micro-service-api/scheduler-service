@@ -11,6 +11,7 @@ import com.example.models.response.ApiResponse;
 import com.example.service.MailScheduleService;
 import org.quartz.JobDetail;
 import org.quartz.Trigger;
+import org.springframework.data.domain.Page;
 import org.springframework.http.HttpStatus;
 import org.springframework.stereotype.Service;
 
@@ -54,12 +55,8 @@ public class MailScheduleServiceImpl implements MailScheduleService {
     }
 
     @Override
-    public ApiResponse<?> getSchedules(int page, int size) {
-        List<MailSchedule> mailSchedules = mailScheduleDao.getSchedules(page, size);
-        if (mailSchedules.isEmpty()) {
-            throw new NotFoundException("don't have schedule");
-        }
-        return new ApiResponse<>("get all get all schedule", mailSchedules.stream().map(ScheduleMapper::toDto).toList(), HttpStatus.OK.value(), true);
+    public Page<MailSchedule> getSchedules(int page, int size) {
+        return mailScheduleDao.getSchedules(page, size);
     }
 
     @Override

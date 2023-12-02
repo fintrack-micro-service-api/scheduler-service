@@ -4,6 +4,7 @@ import com.example.models.entity.MailSchedule;
 import com.example.models.request.MessageRequest;
 import com.example.models.request.Request;
 import com.example.models.response.ApiResponse;
+import org.springframework.data.domain.Page;
 
 import java.time.LocalDateTime;
 import java.util.List;
@@ -14,7 +15,7 @@ public interface MailScheduleService {
 
     ApiResponse<?>  getAllSchedulesByUserId(String userId,Integer pageNo,Integer pageSize);
 
-    ApiResponse<?>  getSchedules(int page, int size);
+    Page<MailSchedule> getSchedules(int page, int size);
 
     ApiResponse<?> updateScheduleById(Long scheduleId,Request request);
 

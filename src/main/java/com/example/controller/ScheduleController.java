@@ -1,12 +1,15 @@
 package com.example.controller;
 
+import com.example.models.entity.MailSchedule;
 import com.example.models.request.MessageRequest;
 import com.example.models.request.Request;
+import com.example.models.response.ApiResponseOne;
 import com.example.service.MailScheduleService;
 import io.swagger.v3.oas.annotations.Operation;
 import io.swagger.v3.oas.annotations.security.SecurityRequirement;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.domain.Page;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
@@ -35,11 +38,17 @@ public class ScheduleController {
 
     @GetMapping("")
     @Operation(summary = "get all schedule")
-    public ResponseEntity<?> getSchedules(
+    public ApiResponseOne<?> getSchedules(
             @RequestParam(defaultValue = "1", required = false) int page,
             @RequestParam(defaultValue = "10", required = false) int size
     ) {
-        return ResponseEntity.ok().body(mailScheduleService.getSchedules(page, size));
+        Page<MailSchedule> mailSchedules = mailScheduleService.getSchedules(page, size);
+        return ApiResponseOne.builder()
+                .message("get Email Reciver Successfully")
+                .payload(mailSchedules.getContent())
+                .total(mailSchedules.getTotalElements())
+                .status(200)
+                .build();
     }
 
     @GetMapping("{userId}")
