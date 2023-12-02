@@ -5,6 +5,7 @@ import com.example.models.request.MessageRequest;
 import com.example.models.request.Request;
 import org.quartz.JobDetail;
 import org.quartz.Trigger;
+import org.springframework.data.domain.Page;
 import org.springframework.stereotype.Component;
 
 import java.time.LocalDateTime;
@@ -18,7 +19,7 @@ public interface MailScheduleDao {
 
     List<MailSchedule> getAllScheduleByUserId(String userId, Integer pageNo, Integer pageSize);
 
-    List<MailSchedule> getSchedules(int page, int size);
+    Page<MailSchedule> getSchedules(int page, int size);
 
     Long updateSchedule(Request request, ZonedDateTime zonedDateTime, Long scheduleId);
 

@@ -147,10 +147,10 @@ public class MailScheduleDaoImpl implements MailScheduleDao {
     }
 
     @Override
-    public List<MailSchedule> getSchedules(int page, int size) {
-        Pageable pageable = PageRequest.of(page - 1, size);
+    public Page<MailSchedule> getSchedules(int page, int size) {
+        Pageable pageable = PageRequest.of(page, size);
         Page<MailSchedule> schedules = mailScheduleRepository.findAll(pageable);
-        return schedules.getContent();
+        return schedules;
     }
 
     @Override
